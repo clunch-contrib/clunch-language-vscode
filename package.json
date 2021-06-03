@@ -9,7 +9,7 @@
   "categories": [
     "Programming Languages"
   ],
-  "icon":"images/clunch.png",
+  "icon": "images/clunch.png",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/clunch-contrib/clunch-language-vscode.git"
@@ -40,13 +40,15 @@
         "path": "./syntaxes/clunch.tmLanguage.json"
       }
     ],
-    "snippets":[{
-      "language": "clunch",
-      "path":"./snippets/clunch.json"
-    }]
+    "snippets": [
+      {
+        "language": "clunch",
+        "path": "./snippets/clunch.json"
+      }
+    ]
   },
   "author": "你好2007",
-  "publisher":"hai2007",
+  "publisher": "hai2007",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/clunch-contrib/clunch-language-vscode/issues"

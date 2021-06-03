@@ -3,23 +3,14 @@
 	"name": "clunch language",
 	"patterns": [
 		{
-			"include": "#keywords"
-		},
-		{
-			"include": "#strings"
+			"include": "#comment"
 		}
 	],
 	"repository": {
-		"keywords": {
-			"patterns": [{
-				"name": "keyword.control.clunch",
-				"match": "\\b(if|while|for|return)\\b"
-			}]
-		},
-		"strings": {
-			"name": "string.quoted.double.clunch",
-			"begin": "\"",
-			"end": "\"",
+		"comment": {
+			"name": "comment.quoted.clunch",
+            "begin":"<!--",
+			"end": "-->",
 			"patterns": [
 				{
 					"name": "constant.character.escape.clunch",
