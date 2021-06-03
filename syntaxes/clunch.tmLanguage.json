@@ -1,23 +1,51 @@
 {
-	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
-	"name": "clunch language",
-	"patterns": [
-		{
-			"include": "#comment"
-		}
-	],
-	"repository": {
-		"comment": {
-			"name": "comment.quoted.clunch",
-            "begin":"<!--",
-			"end": "-->",
-			"patterns": [
-				{
-					"name": "constant.character.escape.clunch",
-					"match": "\\\\."
-				}
-			]
-		}
-	},
-	"scopeName": "source.clunch"
+    "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+    "name": "clunch language",
+    "patterns": [
+        {
+            "include": "#comment"
+        },
+        {
+            "include": "#stringSingle"
+        },
+        {
+            "include": "#stringDouble"
+        }
+    ],
+    "repository": {
+        "comment": {
+            "name": "comment.quoted.double.clunch",
+            "begin": "<!--",
+            "end": "-->",
+            "patterns": [
+                {
+                    "name": "constant.character.escape.clunch",
+                    "match": "\\\\."
+                }
+            ]
+        },
+        "stringSingle": {
+            "name": "string.quoted.double.clunch",
+            "begin": "'",
+            "end": "'",
+            "patterns": [
+                {
+                    "name": "constant.character.escape.clunch",
+                    "match": "\\\\."
+                }
+            ]
+        },
+        "stringDouble": {
+            "name": "string.quoted.double.clunch",
+            "begin": "\"",
+            "end": "\"",
+            "patterns": [
+                {
+                    "name": "constant.character.escape.clunch",
+                    "match": "\\\\."
+                }
+            ]
+        }
+    },
+    "scopeName": "source.clunch"
 }
