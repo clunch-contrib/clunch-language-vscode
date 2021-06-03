@@ -39,7 +39,11 @@
         "scopeName": "source.clunch",
         "path": "./syntaxes/clunch.tmLanguage.json"
       }
-    ]
+    ],
+    "snippets":[{
+      "language": "clunch",
+      "path":"./snippets/clunch.json"
+    }]
   },
   "author": "你好2007",
   "publisher":"hai2007",

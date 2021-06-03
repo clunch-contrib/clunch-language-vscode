@@ -1,0 +1,72 @@
+{
+    "弧形arc": {
+        "prefix": "arc",
+        "body": [
+            "<!-- 分别表示：圆心坐标、内外半径和跨越弧度 -->",
+            "<arc cx='${1:number}' cy='${2:number}' radius1='${3:number}' radius2='${4:number}' deg='${5:number}' />"
+        ],
+        "description": "弧形arc"
+    },
+    "圆circle": {
+        "prefix": "circle",
+        "body": [
+            "<!-- 分别表示：圆心坐标、半径 -->",
+            "<circle cx='${1:number}' cy='${2:number}' radius='${3:number}' />"
+        ],
+        "description": "圆circle"
+    },
+    "路径path": {
+        "prefix": "path",
+        "body": [
+            "<path>",
+            "",
+            "\t<!-- 移动到指定点（画笔离开画布） -->",
+            "\t<move-to x='${1:number}' y='${2:number}' />",
+            "",
+            "\t<!-- 连线到指定点（画笔没有离开画布） -->",
+            "\t<line-to x='${3:number}' y='${4:number}' />",
+            "",
+            "\t<!--",
+            "\t\tcp1x和cp1y表示第一个控制点，必输，只有一个控制点就是二次贝塞尔到",
+            "\t\tcp2x和cp2y表示第二个控制点，非必输，如果设置了，表示三次贝塞尔到",
+            "\t\tx和y表示终点坐标，必输",
+            "\t-->",
+            "\t<bezier-to x='${5:number}' y='${6:number}' cp1x='${7:number}' cp1y='${8:number}' cp2x='${9:number}' cp2y='${10:number}' />",
+            "",
+            "</path>"
+        ],
+        "description": "路径path"
+    },
+    "矩形rect": {
+        "prefix": "rect",
+        "body": [
+            "<!-- 分别表示：矩形坐标、宽和高 -->",
+            "<rect x='${1:number}' y='${2:number}' width='${3:number}' height='${4:number}' />"
+        ],
+        "description": "矩形rect"
+    },
+    "文字text": {
+        "prefix": "text",
+        "body": [
+            "<!-- 分别表示：文字坐标和内容 -->",
+            "<text x='${1:number}' y='${2:number}' content='${3:string}' />"
+        ],
+        "description": "文字text"
+    },
+    "直线刻度尺ruler": {
+        "prefix": "ruler",
+        "body": [
+            "<!-- 分别表示：刻度尺坐标、长度和数据 -->",
+            "<ruler x='${1:number}' y='${2:number}' length='${3:number}' value='${4:array}' />"
+        ],
+        "description": "直线刻度尺ruler"
+    },
+    "弧形刻度尺polar-ruler": {
+        "prefix": "polar-ruler",
+        "body": [
+            "<!-- 分别表示：刻度尺圆心、半径和数据 -->",
+            "<polar-ruler cx='${1:number}' cy='${2:number}' radius='${3:number}' value='${4:array}' />"
+        ],
+        "description": "弧形刻度尺polar-ruler"
+    }
+}
