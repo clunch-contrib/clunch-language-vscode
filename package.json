@@ -1,0 +1,51 @@
+{
+  "name": "clunch-language-vscode",
+  "displayName": "clunch语言扩展插件",
+  "version": "0.1.0-alpha",
+  "description": "Development of clunch language plug-in for vscode",
+  "engines": {
+    "vscode": "^1.27.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "icon":"images/clunch.png",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clunch-contrib/clunch-language-vscode.git"
+  },
+  "keywords": [
+    "clunch",
+    "vscode",
+    "language"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "clunch",
+        "aliases": [
+          "clunch language",
+          "clunch"
+        ],
+        "extensions": [
+          ".clunch"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "clunch",
+        "scopeName": "source.clunch",
+        "path": "./syntaxes/clunch.tmLanguage.json"
+      }
+    ]
+  },
+  "author": "你好2007",
+  "publisher":"hai2007",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/clunch-contrib/clunch-language-vscode/issues"
+  },
+  "homepage": "https://github.com/clunch-contrib/clunch-language-vscode#readme"
+}
