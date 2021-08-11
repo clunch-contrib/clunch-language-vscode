@@ -1,6 +1,7 @@
 # Clunch Language VSCode
 
-> 当前项目处于研发状态！
+## Issues
+使用的时候遇到任何问题或有好的建议，请点击进入[issue](https://github.com/clunch-contrib/clunch-language-vscode/issues)，欢迎参与维护！
 
 ## 打包使用
 
